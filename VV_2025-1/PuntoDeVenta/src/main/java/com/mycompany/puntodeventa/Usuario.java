@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package com.mycompany.puntodeventa;
 
 /**
@@ -68,6 +65,6 @@ public class Usuario {
 
     @Override
     public String toString() {
-        return "Usuario{" + "id=" + id + ", nombre=" + nombre + ", correo=" + correo + ", contra=" + contra + ", rol= " + rol + "}" ;
+        return "Usuario{" + "id=" + id + ", nombre=" + nombre + ", correo=" + correo + ", contra=" + contra + ", rol=" + rol + "}" ;
     }
 }
