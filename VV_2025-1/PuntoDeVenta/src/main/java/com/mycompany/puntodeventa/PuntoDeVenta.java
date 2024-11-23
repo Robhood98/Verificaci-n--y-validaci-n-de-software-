@@ -1,19 +1,23 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- */
+
 
 package com.mycompany.puntodeventa;
 
-import java.net.ConnectException;
 import java.sql.Connection;
 import java.util.List;
 import mx.com.vafis.puntodeventa.database.ConexionSQLite;
 import mx.com.vafis.puntodeventa.database.UsuarioDAO;
 
-
 public class PuntoDeVenta {
 
     public static void main(String[] args) {
+        
+        MainMenu mm = new MainMenu();
+        mm.MainMenuLoop();
+        
+        System.out.println("Saliendo ...");
+        System.exit(0);
+        
+        
         Connection conexion =  ConexionSQLite.conectar();
         
         UsuarioDAO usuarioDao = new UsuarioDAO(conexion);
